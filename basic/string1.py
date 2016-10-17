@@ -25,7 +25,9 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
     # +++your code here+++
-    return
+    #return 'Number of donuts: %s' % ((count < 10) and [count] or ['many'])[0] #http://stackoverflow.com/a/394887
+    #return 'Number of donuts: %s' % (['many', count][count < 10]) # http://stackoverflow.com/a/470376
+    return 'Number of donuts: %s' % (count if count < 10 else 'many')
 
 
 # B. both_ends
