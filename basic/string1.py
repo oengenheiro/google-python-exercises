@@ -37,7 +37,7 @@ def donuts(count):
 # is less than 2, return instead the empty string.
 def both_ends(s):
     # +++your code here+++
-    return s[:2] + s[-2:] if len(s) > 2 else ''
+    return '' if len(s) < 2 else s[:2] + s[-2:]
 
 
 # C. fix_start
